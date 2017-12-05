@@ -2,22 +2,22 @@ var express = require("express");
 var app = express();
 var friends = require("./../data/friends.js");
 
-require("friends");
 
 
-app.get("/api/friends", function(req, res) {
+
+app.get("api/friends", function(req, res) {
 	res.sendFile(path.join(__dirname, "friends.js"));
 	res.json(friends);
 });
 
-app.post("/api/friends", function(req, res) {
+app.post("api/friends", function(req, res) {
 	var newFriend = req.body;
 	
-	for (var i = 0; i < newFriend.score.length; i ++) {
-		newFriend.score[i] = parseInt(newFriend.score[i]);
+	for (var i = 0; i < newFriend.score.length; i++) {
+		newFriend.score[i] = (newFriend.score[i]);
 	}
 
-	var hardcoded = calculateDiff(newFriend.scores);
+	var hardcoded = calculateDiff(newFriend.score);
 	var matchUser = match(hardcoded);
 	var matchIndex = hardcoded.indexOf(matchUser);
 	var matched = friends[matchIndex];
