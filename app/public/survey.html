@@ -195,7 +195,7 @@
 			</div>
 		</div>
 
-		 <div class="modal modal fade">
+		 <div class="modal fade" id="modal" tabindex="-1" role="dialog">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -212,7 +212,7 @@
                     </div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="/" target ="self"><button type="button" class="btn btn-default">Home</button></a>
                   </div>
                 </div>
               </div>
@@ -249,7 +249,7 @@
 		var newFriend = {
 			name: name,
 			photo: photo,
-			score: score
+			scores: score
 		}
 
 		$.post("/api/friends", newFriend, function(data) {
@@ -258,9 +258,11 @@
 		})
 		.done(function(data) {
 			console.log(data);
-			$(".userName").html(friends.name)
-			$(".userPhoto").attr("src", friends.photo);
-			$(".modal").modal();
+			$(".mate-Name").html(data.name)
+			$(".mate-image").attr("src", data.photo);
+			$(".modal").on("shown.bs.modal", function() {
+				$("#myInput").focus()
+			});
 
 		});
 	});

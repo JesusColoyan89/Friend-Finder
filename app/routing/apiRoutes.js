@@ -2,6 +2,8 @@ var express = require("express");
 var app = express();
 var friends = require("./../data/friends.js");
 
+require("friends");
+
 
 app.get("/api/friends", function(req, res) {
 	res.sendFile(path.join(__dirname, "friends.js"));
