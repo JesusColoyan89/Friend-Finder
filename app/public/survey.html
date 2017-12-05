@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friend Finder Survey</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jquery -->
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+  <!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm12-m12-lg12">
+				<h2> Survey Questions </h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<h2> About You </h2>
+				<h3> Name (Required) </h3>
+				<input type="name" class="form-control" id="userName" placeholder="Enter Name">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<h3> Link to Photo Image (Required)</h3>
+				<input type="photo" class="form-control" id="userPhoto" placeholder="Photo URL">
+			</div>
+		</div>
+
+	<hr/>
+	<div class="row">
+		<div class="col">
+			<h2> On a scale of 1 to 5, 1 being strongly disagree and 5 	being strongly agree. Answer these questions truthfully, in order to get matched correctly.
+			</h2>
+		</div>
+	</div>
+	<hr/>	
+
+	<!-- Survey Questions -->
+
+		<div class="row">
+			<div class="col">
+				<form class="surveyQuestions">
+
+				<p>
+					<h3>Question 1:</h3>
+					<h4>How do you feel about the color Lemon Chiffon?</h4>
+				</p>
+					<div class="btn-group" id="1Answer">
+				 	<input type="radio" name="question1" value=1> 1<br>
+				 	<input type="radio" name="question1" value=2> 2<br>
+				 	<input type="radio" name="question1" value=3> 3<br>
+				 	<input type="radio" name="question1" value=4> 4<br>
+				 	<input type="radio" name="question1" value=5> 5<br>	
+				 	</div>
+
+					<br>
+
+				<p>
+					<h3>Question 2:</h3>
+					<h4>Jingle All The Way starring Arnold Schawrzenneger is a great movie.</h4>
+				</p>
+					<div class="btn-group" id="2Answer">
+				 	<input type="radio" name="question2" value=1> 1<br>
+				 	<input type="radio" name="question2" value=2> 2<br>
+				 	<input type="radio" name="question2" value=3> 3<br>
+				 	<input type="radio" name="question2" value=4> 4<br>
+				 	<input type="radio" name="question2" value=5> 5<br>
+				 	</div>
+
+					<br>
+
+				<p>
+					<h3>Question 3:</h3>
+					<h4>Book learning is for nerds.</h4>
+				</p>
+					<div class="btn-group" id="3Answer">
+				 	<input type="radio" name="question3" value=1> 1<br>
+				 	<input type="radio" name="question3" value=2> 2<br>
+				 	<input type="radio" name="question3" value=3> 3<br>
+				 	<input type="radio" name="question3" value=4> 4<br>
+				 	<input type="radio" name="question3" value=5> 5<br>	</div>
+
+					<br>
+
+
+				<p>
+					<h3>Question 4:</h3>
+					<h4>Jesus Bacon is top 5 all time greatest names.</h4>
+				</p>
+					<div class="btn-group" id="4Answer">
+				 	<input type="radio" name="question4" value=1> 1<br>
+				 	<input type="radio" name="question4" value=2> 2<br>
+				 	<input type="radio" name="question4" value=3> 3<br>
+				 	<input type="radio" name="question4" value=4> 4<br>
+				 	<input type="radio" name="question4" value=5> 5<br>
+				 	</div>
+
+					<br>
+
+				<p>
+					<h3>Question 5:</h3>
+					<h4>The Clippers are a good franchise and should be treated with respect even though they have won nothing.</h4>
+				</p>
+					<div class="btn-group" id="5Answer">
+				 	<input type="radio" name="question5" value=1> 1<br>
+				 	<input type="radio" name="question5" value=2> 2<br>
+				 	<input type="radio" name="question5" value=3> 3<br>
+				 	<input type="radio" name="question5" value=4> 4<br>
+				 	<input type="radio" name="question5" value=5> 5<br>
+				 	</div>
+
+					<br>
+
+				<p>
+					<h3>Question 6:</h3>
+					<h4>Aziz Ansari's standup is yelly and isn't really that funny.</h4>
+				</p>
+					<div class="btn-group" id="6Answer">
+				 	<input type="radio" name="question6" value=1> 1<br>
+				 	<input type="radio" name="question6" value=2> 2<br>
+				 	<input type="radio" name="question6" value=3> 3<br>
+				 	<input type="radio" name="question6" value=4> 4<br>
+				 	<input type="radio" name="question6" value=5> 5<br>
+				 	</div>
+
+					<br>
+
+				<p>
+					<h3>Question 7:</h3>
+					<h4>Jodorowsky's Dune would've been better than the original Star Wars trilogy.</h4>
+				</p>
+					<div class="btn-group" id="7Answer">
+				 	<input type="radio" name="question7" value=1> 1<br>
+				 	<input type="radio" name="question7" value=2> 2<br>
+				 	<input type="radio" name="question7" value=3> 3<br>
+				 	<input type="radio" name="question7" value=4> 4<br>
+				 	<input type="radio" name="question7" value=5> 5<br>
+				 	</div>
+
+					<br>
+
+				<p>
+					<h3>Question 8:</h3>
+					<h4>Crispin Glover is totally not creepy.</h4>
+				</p>
+					<div class="btn-group" id="8Answer">
+				 	<input type="radio" name="question8" value=1> 1<br>
+				 	<input type="radio" name="question8" value=2> 2<br>
+				 	<input type="radio" name="question8" value=3> 3<br>
+				 	<input type="radio" name="question8" value=4> 4<br>
+				 	<input type="radio" name="question8" value=5> 5<br>
+					</div>
+
+					<br>
+
+				<p>
+					<h3>Question 9:</h3>
+					<h4>Wearing white after Labor Day isn't a big deal, and people who think it is should be stopped.</h4>
+				</p>
+				<div class="btn-group" id="9Answer">
+				 	<input type="radio" name="question9" value=1> 1<br>
+				 	<input type="radio" name="question9" value=2> 2<br>
+				 	<input type="radio" name="question9" value=3> 3<br>
+				 	<input type="radio" name="question9" value=4> 4<br>
+				 	<input type="radio" name="question9" value=5> 5<br>
+				 </div>			
+					<br>
+
+				<p>
+					<h3>Question 10:</h3>
+					<h4>Supreme Leader Snoke is really Jar Jar Binks.</h4>
+				</p>
+
+					<div class="btn-group" id="10Answer">
+				 	<input type="radio" name="question10" value=1> 1<br>
+				 	<input type="radio" name="question10" value=2> 2<br>
+				 	<input type="radio" name="question10" value=3> 3<br>
+				 	<input type="radio" name="question10" value=4> 4<br>
+				 	<input type="radio" name="question10" value=5> 5<br>
+					</div>
+				<br>
+<br/>
+<br/>				
+					<input type="submit" id="submitButton" class=".btn-group-lg" value="Done">
+				</form>	 
+			</div>
+		</div>
+
+		 <div class="modal modal fade">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Your best mate is...</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div style="text-align:center;">
+                        <h2>Name: <span class="mate-Name"></span>
+                        </h2>
+                        <img class="mate-image" />
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+	<div class="row">
+		<div id = "footer" class="col">
+			<a class="friendApi" href="">Friends API</a>
+			<a class="githubApi" href="">Github API</a>
+		</div>	
+	</div>
+</div>	
+
+<script type ="text/javascript">
+
+
+	$("submitButton").on("click", function(event) {
+		event.preventDefault();
+			
+			var name = $("#userName").val().trim();
+			var photo = $("#userPhoto").val().trim();
+			var score = [
+				$("#1Answer").val().trim(),
+				$("#2Answer").val().trim(),
+				$("#3Answer").val().trim(),
+				$("#4Answer").val().trim(),
+				$("#5Answer").val().trim(),
+				$("#6Answer").val().trim(),
+				$("#7Answer").val().trim(),
+				$("#8Answer").val().trim(),
+				$("#9Answer").val().trim(),
+				$("#10Answer").val().trim()
+				];
+		var newFriend = {
+			name: name,
+			photo: photo,
+			score: score
+		}
+
+		$.post("/api/friends", newFriend, function(data) {
+			console.log(data);
+			console.log("data: " + JSON.stringify(data));
+		})
+		.done(function(data) {
+			console.log(data);
+			$(".userName").html(friends.name)
+			$(".userPhoto").attr("src", friends.photo);
+			$(".modal").modal();
+
+		});
+	});
+</script>							
+
+		
+
+
+
+
+</body>
+</html>
