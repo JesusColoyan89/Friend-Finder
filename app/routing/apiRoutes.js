@@ -7,6 +7,7 @@ require("friends");
 
 app.get("/api/friends", function(req, res) {
 	res.sendFile(path.join(__dirname, "friends.js"));
+	res.json(friends);
 });
 
 app.post("/api/friends", function(req, res) {
@@ -16,7 +17,7 @@ app.post("/api/friends", function(req, res) {
 		newFriend.score[i] = parseInt(newFriend.score[i]);
 	}
 
-	var hardcoded = difference([4,1,1,5,2,1,5,3,4,2]);
+	var hardcoded = calculateDiff(newFriend.scores);
 	var matchUser = match(hardcoded);
 	var matchIndex = hardcoded.indexOf(matchUser);
 	var matched = friends[matchIndex];
