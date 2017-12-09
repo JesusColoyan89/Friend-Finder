@@ -9,6 +9,7 @@ var apiRoutes = require("./app/routing/apiRoutes.js");
 var app = express();
 var PORT = process.env.PORT || 3000;
 
+app.use(express.static(__dirname + "/app/public"));
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 

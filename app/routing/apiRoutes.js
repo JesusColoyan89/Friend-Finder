@@ -1,16 +1,17 @@
 var express = require("express");
-var app = express();
+var router = express.Router();
 var friends = require("./../data/friends.js");
 
 
 
 
-app.get("api/friends", function(req, res) {
+
+router.get("/api/friends", function(req, res) {
 	res.sendFile(path.join(__dirname, "friends.js"));
 	res.json(friends);
 });
 
-app.post("api/friends", function(req, res) {
+router.post("/api/friends", function(req, res) {
 	var newFriend = req.body;
 	
 	for (var i = 0; i < newFriend.score.length; i++) {
@@ -62,7 +63,7 @@ function match (difference) {
 	return bestmatch
 }
 
-module.exports = app;
+module.exports = router;
 
 
 
